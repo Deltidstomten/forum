@@ -1,0 +1,103 @@
+body {
+    background-color: #524C42;
+    color: #524C42;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #F97300;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #F97300;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+a {
+    font-size: 1.8rem;
+    color: #32012F;
+}
+
+button {
+    background-color: #E2DFD0;
+    color: #32012F;
+    border: none;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 10px;
+
+    font-weight: bolder;
+}
+
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+
+    padding: 1%;
+
+    background-color: #E2DFD0;
+
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 5px #3b3730;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    width: 20%;
+
+    align-items: center;
+}
+
+.account button{
+    margin: 2%;
+}
+
+.category{
+    
+}
+
+.category-name{
+    font-weight: bolder;
+}
+
+.category-description{
+    
+}
+
+.thread{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+}
+
+.thread-name{
+
+}
+
+.thread-description{
+    font-size: 1.2rem;
+}
+
+.thread-info{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    align-self: center;
+}

@@ -1,0 +1,13 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Forum
+        link(rel="stylesheet", href="style.css")
+    body
+        include banner.pug
+        main
+            each val, index in categories
+                div(class="category")
+                    a(href="/category/" + val.id class="category-name")=val.name
+                    p(class="category-description")=val.description

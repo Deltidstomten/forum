@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="../style.css")
+    body
+        include banner.pug
+        main
+            each val in posts
+                p=val.text
+                div=`Posted at ${val.post_creation_date} by ` 
+                    a(href="/user/" + val.author_id)= `${val.username}`

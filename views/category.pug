@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="../style.css")
+    body
+        include banner.pug
+        main
+            each val in threads
+                div(class="thread")
+                    a(class="thread-name" href="/thread/" + val.id)=val.name
+                    div(class="thread-info")=`Created at ${val.thread_creation_date} by ` 
+                        a(href="/user/" + val.author_id)= `${val.username}`
+                    p(class="thread-description")=val.description
+                    
